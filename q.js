@@ -148,7 +148,7 @@
      * getDate(option): Takes in string representation of desired
      * date string to be returned.
      * Options are "m/d/year", "month day, year", "month(text)",
-     * "month(abr)", "day(text)", "day(abv)" all others will return
+     * "month(abbr)", "day(text)", "day(abbr)" all others will return
      * new Date(); If no option is set "m/d/year" is assumed.
      *
      * @param {String} option
@@ -172,11 +172,11 @@
                     return q.months[m] + " " + d + ", " + y;
                 case "month(text)":
                     return q.months[m];
-                case "month(abr)":
+                case "month(abbr)":
                     return q.shortMonths[m];
                 case "day(text)":
                     return q.days[day];
-                case "day(abv)":
+                case "day(abbr)":
                     return q.shortDays[day];
                 default:
                     return _D;
